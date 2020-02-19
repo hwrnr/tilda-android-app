@@ -1,5 +1,6 @@
 package center.tilda.tildablog.deleteme
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -12,6 +13,8 @@ import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    var counter: Int = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -21,7 +24,10 @@ class MainActivity : AppCompatActivity() {
             //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
               //  .setAction("Action", null).show()
 
-            ovo_je_tekst_polje.text = "Novi hello world!"
+            val newIntent = Intent(this@MainActivity, NoviActivity::class.java)
+            newIntent.putExtra("counterValue", counter)
+            startActivity(newIntent)
+
         }
     }
 
@@ -39,5 +45,15 @@ class MainActivity : AppCompatActivity() {
             R.id.action_settings -> true
             else -> super.onOptionsItemSelected(item)
         }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        counter++
+    }
+
+    override fun onResume() {
+        super.onResume()
+        ovo_je_tekst_polje.text = counter.toString()
     }
 }

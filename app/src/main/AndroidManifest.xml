@@ -10,6 +10,31 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".InstagramActivity"
+            android:label="@string/title_activity_instagram"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NoviActivity"
+            android:label="@string/title_activity_novi"
+            android:parentActivityName="androidx.appcompat.app.AppCompatActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="androidx.appcompat.app.AppCompatActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
@@ -19,6 +44,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".NoviNoviActivity"
+            android:label="@string/title_activity_novi"
+            android:parentActivityName="androidx.appcompat.app.AppCompatActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            </activity>
     </application>
 
 </manifest>
