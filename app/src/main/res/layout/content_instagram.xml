@@ -11,7 +11,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Instagram username"
+        android:hint="@string/instagram_username_hint"
         android:id="@+id/username_input_box"
         app:layout_constraintTop_toTopOf="parent"
         />
@@ -19,11 +19,11 @@
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="nature_232"
+        android:text="@string/load_user_instagram_button_text"
         app:layout_constraintTop_toBottomOf="@id/username_input_box"
         android:layout_margin="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@android:color/white"
+        android:background="?attr/colorPrimary"
         android:onClick="launchInstagram"
         />
 

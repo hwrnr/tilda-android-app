@@ -12,7 +12,7 @@
         <activity
             android:name=".InstagramActivity"
             android:label="@string/title_activity_instagram"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppThemeAuto.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

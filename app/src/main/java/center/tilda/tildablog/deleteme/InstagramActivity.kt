@@ -31,7 +31,7 @@ class InstagramActivity : AppCompatActivity() {
         val uri: Uri = Uri.parse("http://instagram.com/$username")
         val likeIng = Intent(Intent.ACTION_VIEW, uri)
 
-        likeIng.setPackage("com.instagram.android")
+        //likeIng.setPackage("com.instagram.android")
 
         try {
             startActivity(likeIng)

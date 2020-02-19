@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tilda App</string>
+    <string name="action_settings">Podešavanja</string>
+    <string name="instagram_username_hint">Instagram korisničko ime</string>
+    <string name="load_user_instagram_button_text">Učitaj korisnika</string>
+</resources>

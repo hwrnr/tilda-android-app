@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Tilda App</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_novi">NoviActivity</string>
-    <string name="title_activity_instagram">InstagramActivity</string>
+    <string name="title_activity_novi" translatable="false">NoviActivity</string>
+    <string name="title_activity_instagram" translatable="false">InstagramActivity</string>
+
+
+    <string name="load_user_instagram_button_text">Load user</string>
+    <string name="instagram_username_hint">Instagram username</string>
 </resources>
